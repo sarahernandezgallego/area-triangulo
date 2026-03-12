@@ -1,4 +1,5 @@
-//crear un progrma que calcule el descuento de un 25% de un salario devengado calcule su nombre y su salario 
+//crear un progrma que calculeel descuento de un 25% de un salario devengado calcule su nombre y su salario 
+
 PROCESO descuento 
     ESCRIBIR "programa que te descuennta el 25%"
     ESCRIBIR "digite su nombre:"
@@ -7,5 +8,11 @@ PROCESO descuento
     leer salario
     descuento = salario * 25 / 100 //esta linea calccula el porcentage
     salariototal = salario - descuento  
+
+        SI salariototal > 1000000 ENTONCES 
+        ESCRIBIR "su salario es  muy alto, usted gana ",salariototal
+        SINO
+        ESCRIBIR "su salario es menor a un millon, usted gana ", salariototal
+        FINSI
     ESCRIBIR "su nombre es: ",nombre," su salario devengado es ",salario," y con el descuento del 25%,su salario queda en ",salariototal
 FINPROCESO
